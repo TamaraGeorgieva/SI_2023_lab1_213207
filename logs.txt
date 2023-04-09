@@ -1,0 +1,203 @@
+C:\Users\User>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\User>cd Desktop
+
+C:\Users\User\Desktop>cd LAB SI
+
+C:\Users\User\Desktop\LAB SI>fork https://github.com/TamaraGeorgieva/SI_2023_lab1_213207-.git
+'fork' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\User\Desktop\LAB SI>git init
+Initialized empty Git repository in C:/Users/User/Desktop/LAB SI/.git/
+
+C:\Users\User\Desktop\LAB SI>git remote add origin https://github.com/TamaraGeorgieva/SI_2023_lab1_213207-.git
+
+C:\Users\User\Desktop\LAB SI>echo "Tamara Georgieva 213207" >> README.md
+
+C:\Users\User\Desktop\LAB SI>gitstatus
+'gitstatus' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\User\Desktop\LAB SI>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\User\Desktop\LAB SI>git add README.md
+
+C:\Users\User\Desktop\LAB SI>git commit -m "Initial commit"
+[master (root-commit) 9b70714] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+C:\Users\User\Desktop\LAB SI>git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 257 bytes | 257.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/TamaraGeorgieva/SI_2023_lab1_213207-.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\User\Desktop\LAB SI>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SILab1.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\User\Desktop\LAB SI>git add SILab1.java
+
+C:\Users\User\Desktop\LAB SI>git commit -m "Add java class"
+[master 8baa6b4] Add java class
+ 1 file changed, 41 insertions(+)
+ create mode 100644 SILab1.java
+
+C:\Users\User\Desktop\LAB SI>git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 641 bytes | 641.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/TamaraGeorgieva/SI_2023_lab1_213207-.git
+   9b70714..8baa6b4  master -> master
+
+C:\Users\User\Desktop\LAB SI>git branch bug1
+
+C:\Users\User\Desktop\LAB SI>git branch bug2
+
+C:\Users\User\Desktop\LAB SI>git branch bug3
+
+C:\Users\User\Desktop\LAB SI>git checkout bug1
+Switched to branch 'bug1'
+
+C:\Users\User\Desktop\LAB SI>git add SILab1.java
+
+C:\Users\User\Desktop\LAB SI>git commit -m "Fix wrong loop for reading"
+On branch bug1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SILab1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\User\Desktop\LAB SI>git add SILab1.java
+
+C:\Users\User\Desktop\LAB SI>git commit -m "Fix wrong loop for reading"
+[bug1 81f4bb7] Fix wrong loop for reading
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\User\Desktop\LAB SI>git checkout bug2
+Switched to branch 'bug2'
+
+C:\Users\User\Desktop\LAB SI>git add SILab1.java
+
+C:\Users\User\Desktop\LAB SI>git commit -m "Fix wrong condition in filterOddNumbers"
+[bug2 39568bb] Fix wrong condition in filterOddNumbers
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\User\Desktop\LAB SI>git checkout bug3
+Switched to branch 'bug3'
+
+C:\Users\User\Desktop\LAB SI>git add SILab1.java
+
+C:\Users\User\Desktop\LAB SI>git add SILab1.java
+
+C:\Users\User\Desktop\LAB SI>git commit -m "Fix method sumEvenNumbers"
+[bug3 01b968b] Fix method sumEvenNumbers
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+C:\Users\User\Desktop\LAB SI>git checkout bug1
+Switched to branch 'bug1'
+
+C:\Users\User\Desktop\LAB SI>git push
+fatal: The current branch bug1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin bug1
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+C:\Users\User\Desktop\LAB SI>git push origin master
+Everything up-to-date
+
+C:\Users\User\Desktop\LAB SI>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\Users\User\Desktop\LAB SI>git merge bug1
+Updating 8baa6b4..81f4bb7
+Fast-forward
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\User\Desktop\LAB SI>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 340 bytes | 340.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/TamaraGeorgieva/SI_2023_lab1_213207-.git
+   8baa6b4..81f4bb7  master -> master
+
+C:\Users\User\Desktop\LAB SI>git merge bug2
+Auto-merging SILab1.java
+Merge made by the 'ort' strategy.
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\User\Desktop\LAB SI>git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 690 bytes | 690.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/TamaraGeorgieva/SI_2023_lab1_213207-.git
+   81f4bb7..cab12c3  master -> master
+
+C:\Users\User\Desktop\LAB SI>git checkout bug3
+Switched to branch 'bug3'
+
+C:\Users\User\Desktop\LAB SI>git rebase master
+Successfully rebased and updated refs/heads/bug3.
+
+C:\Users\User\Desktop\LAB SI>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\Users\User\Desktop\LAB SI>git merge bug3
+Updating cab12c3..14cb07b
+Fast-forward
+ SILab1.java | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+C:\Users\User\Desktop\LAB SI>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 358 bytes | 358.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/TamaraGeorgieva/SI_2023_lab1_213207-.git
+   cab12c3..14cb07b  master -> master

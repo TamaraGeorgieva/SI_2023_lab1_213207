@@ -1,0 +1,15 @@
+1. Прво го инсталирав Git, и направив акаунт на Github, и потоа созадаов репозиториумот според дадените инструкции.
+2. Иницијализирам празен директориум со командата git init 
+3. Со командата git remote add origin создадов директориум од веќесозададениот репозиториум на Github и ги поврзав
+4. Додадов  README.md  датотека  во  која се  потпишав со командата echo "Tamara Georgieva 213207" >> README.md, а потоа ја додадов со git add README.md
+5. Фајлот README.md го комитнав со командата git commit -m "Initial commit"
+6. Ја созададов бараната класа со git add SILab1.java, и направив commit со командата git commit -m "Add java class"
+7. Направив синхронизавција со git push.
+8. Направив три гранки со командите git branch bug1, git branch bug2 и git branch bug3.
+9. git checkout bug1 - Со оваа команда се префрлив во гранката bug1, во таа гранка го додадов фајлот со јава класата со git add SILab1.java каде што само циклусот е поправен, а потоа направив commit со git commit -m "Fix wrong loop for reading".
+10. git checkout bug2 - Со оваа команда се префрлив во гранката bug2, во таа гранка го додадов фајлот со јава класата со git add SILab1.java каде што само грешката во методот filterOddNumbers е поправена, а потоа направив commit со git commit -m "Fix wrong condition in filterOddNumbers".
+11. git checkout bug2 - Со оваа команда се префрлив во гранката bug2, во таа гранка го додадов фајлот со јава класата со git add SILab1.java каде што само грешката во методот sumEvenNumbers е поправена, а потоа направив commit со git commit -m "Fix method sumEvenNumbers".
+12. Потоа се вратив низ сите гранки и ја искористив git push origin master за се да се синхронизира.
+13. Се префрлив на главната гранка со командата git checkout master, и потоа со git merge bug1, git merge bug2 ги споив гранките bug1 и bug2 со гранката master, и потоа ги синхронизирав со git push.
+14. Со командата git checkout bug3 се префрлив на гранката bug3 каде што направив rebase спрема гранката master со командата git rebase master.
+15. Со командата git checkout master се префрлив на гранката master каде што со командата git merge bug3 ја споив гранката bug3 со гранката master и со git push извршив синхронизација.
